@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../../../Components/Button/inidex";
+import Button from "../../../Components/Button";
 import Card from "../../../Components/Card/inidex";
 
 
@@ -8,10 +8,12 @@ export default function HomeBody() {
         <main>
             <section className="container">
                 <div className="mb30 mt30">
-                    {<Card title="Página Inicial" />}
+                    <Card title="Página Inicial" />
                 </div>
                 <div className="dflex">
-                    {<Button text="Ver Promoção"/> }
+                    <Link to="/promotion">
+                        <Button text="Ver Promoção" />
+                    </Link>  
                 </div>
             </section>
 

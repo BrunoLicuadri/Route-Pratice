@@ -1,4 +1,5 @@
-import Button from "../../../Components/Button/inidex";
+import { Link } from "react-router-dom";
+import Button from "../../../Components/Button";
 import Card from "../../../Components/Card/inidex";
 
 export default function Promotion() {
@@ -9,7 +10,9 @@ export default function Promotion() {
                     <Card title="Página de Promoção" />
                 </div>
                 <div className="dflex">
-                    <Button text="Quero Participar" />
+                    <Link to="/sub">
+                        <Button text="Quero Participar" />
+                    </Link>
                 </div>
             </section>
 
