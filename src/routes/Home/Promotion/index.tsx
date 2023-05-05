@@ -1,10 +1,18 @@
+import Button from "../../../Components/Button/inidex";
+import Card from "../../../Components/Card/inidex";
 
-export default function Promotion(){
-    return(
+export default function Promotion() {
+    return (
         <main>
-            <div>
-                <h2>Página de Promoções</h2>
-            </div>
+            <section className="container">
+                <div className="mb30 mt30">
+                    <Card title="Página de Promoção" />
+                </div>
+                <div className="dflex">
+                    <Button text="Quero Participar" />
+                </div>
+            </section>
+
         </main>
     );
 }
